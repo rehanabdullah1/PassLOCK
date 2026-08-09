@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-13
 
     steps:
       - name: Checkout
@@ -16,9 +16,10 @@ jobs:
         uses: geode-sdk/build-geode-mod@main
         with:
           sdk: nightly
+          target: MacOS
 
-      - name: Upload Geode file
+      - name: Upload Geode
         uses: actions/upload-artifact@v4
         with:
           name: PassLOCK
-          path: build/*.geode
+          path: "**/*.geode"
