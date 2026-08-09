@@ -12,11 +12,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build Geode Mod
+      - name: Build Geode mod
         uses: geode-sdk/build-geode-mod@main
+        with:
+          sdk: nightly
 
-      - name: Upload .geode
+      - name: Upload Geode file
         uses: actions/upload-artifact@v4
         with:
           name: PassLOCK
-          path: "*.geode"
+          path: build/*.geode
