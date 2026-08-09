@@ -1,0 +1,14 @@
+{
+    "geode": "4.0.0",
+    "version": "v1.0.0",
+    "id": "rehan.passlock",
+    "name": "PassLOCK",
+    "developer": "Rehan",
+    "description": "A password lock for Geometry Dash.",
+    "dependencies": {
+        "geode": {
+            "version": ">=4.0.0",
+            "importance": "required"
+        }
+    }
+}
